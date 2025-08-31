@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.bagian-input,
+.rak-buku {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.grup-input,
+.input-sejajar {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.input-sejajar {
+  display: flex;
+  align-items: center;
+}
+
+.input-sejajar label {
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+#tombolSubmit {
+  width: 100%;
+  padding: 10px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.item-buku {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-buku h3 {
+  margin: 0 0 5px 0;
+}
+
+.info-buku p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.aksi-item button {
+  padding: 5px 10px;
+  margin-left: 8px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tombol-selesai {
+  background-color: #27ae60;
+}
+
+.tombol-baca-ulang {
+  background-color: #f39c12;
+}
+
+.tombol-hapus {
+  background-color: #c0392b;
+}
+
+@media screen and (max-width: 600px) {
+  .item-buku {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .aksi-item {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .aksi-item button {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+}

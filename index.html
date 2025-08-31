@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rak Buku Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Rak Buku Digital</h1>
+  </header>
+
+  <main>
+    <section class="bagian-input">
+      <h2>Masukkan Buku Baru</h2>
+      <form id="formTambahBuku">
+        <div class="grup-input">
+          <label for="inputJudul">Judul</label>
+          <input id="inputJudul" type="text" required>
+        </div>
+        <div class="grup-input">
+          <label for="inputPenulis">Penulis</label>
+          <input id="inputPenulis" type="text" required>
+        </div>
+        <div class="grup-input">
+          <label for="inputTahun">Tahun</label>
+          <input id="inputTahun" type="number" required>
+        </div>
+        <div class="input-sejajar">
+          <input id="inputSelesaiDibaca" type="checkbox">
+          <label for="inputSelesaiDibaca">Selesai dibaca</label>
+        </div>
+        <button id="tombolSubmit" type="submit">Tambahkan ke Rak</button>
+      </form>
+    </section>
+
+    <section class="rak-buku">
+      <h2>Belum Selesai Dibaca</h2>
+      <div id="rakBelumSelesai" class="daftar-buku">
+      </div>
+    </section>
+
+    <section class="rak-buku">
+      <h2>Selesai Dibaca</h2>
+      <div id="rakSelesaiDibaca" class="daftar-buku">
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
